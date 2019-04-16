@@ -1,7 +1,6 @@
 import ApolloClient from 'apollo-client';
 import React, { ReactElement, ReactNode, useContext } from 'react';
-
-const ApolloContext = React.createContext<null | ApolloClient<any>>(null);
+import { ApolloContext } from 'react-apollo/ApolloContext';
 
 export interface ApolloProviderProps<TCacheShape> {
   readonly children?: ReactNode;
